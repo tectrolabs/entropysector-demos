@@ -1,14 +1,14 @@
 {
-  "main.css": "/coinflip/static/css/main.8cc25853.chunk.css",
-  "main.js": "/coinflip/static/js/main.690fe523.chunk.js",
-  "main.js.map": "/coinflip/static/js/main.690fe523.chunk.js.map",
+  "main.css": "/coinflip/static/css/main.61ec3b80.chunk.css",
+  "main.js": "/coinflip/static/js/main.d5ea2ec8.chunk.js",
+  "main.js.map": "/coinflip/static/js/main.d5ea2ec8.chunk.js.map",
   "runtime~main.js": "/coinflip/static/js/runtime~main.fc48f583.js",
   "runtime~main.js.map": "/coinflip/static/js/runtime~main.fc48f583.js.map",
-  "static/js/2.948d4d77.chunk.js": "/coinflip/static/js/2.948d4d77.chunk.js",
-  "static/js/2.948d4d77.chunk.js.map": "/coinflip/static/js/2.948d4d77.chunk.js.map",
+  "static/js/2.b19c2b74.chunk.js": "/coinflip/static/js/2.b19c2b74.chunk.js",
+  "static/js/2.b19c2b74.chunk.js.map": "/coinflip/static/js/2.b19c2b74.chunk.js.map",
   "index.html": "/coinflip/index.html",
-  "precache-manifest.5e7007e70a7abd0d39204e1b3d2a51a3.js": "/coinflip/precache-manifest.5e7007e70a7abd0d39204e1b3d2a51a3.js",
+  "precache-manifest.7317574c3b27c18203d8c833c71d825e.js": "/coinflip/precache-manifest.7317574c3b27c18203d8c833c71d825e.js",
   "service-worker.js": "/coinflip/service-worker.js",
-  "static/css/main.8cc25853.chunk.css.map": "/coinflip/static/css/main.8cc25853.chunk.css.map",
+  "static/css/main.61ec3b80.chunk.css.map": "/coinflip/static/css/main.61ec3b80.chunk.css.map",
   "static/media/logo.svg": "/coinflip/static/media/logo.5d5d9eef.svg"
 }
