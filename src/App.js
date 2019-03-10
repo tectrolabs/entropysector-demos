@@ -14,9 +14,12 @@ class App extends Component {
     fetch("https://entropysector.com/hwrng/api/v1/public/numbers/1")
       .then(response => response.json())
       .then((result) => {
-        console.log(result);
-        this.setState({ result: result["data"][0] });
+        this.processNumber(result["data"][0]);
       });
+  }
+
+  processNumber = (number) => {
+    this.setState({ result: number });
   }
 
   render() {
