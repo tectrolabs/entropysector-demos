@@ -14,6 +14,7 @@ class App extends Component {
 
   handleClick = () => {
     this.setState({ 
+      error: null,
       loading: true,
       result: null 
     });
@@ -27,6 +28,7 @@ class App extends Component {
     const heads = (number % 2 == 1);
     const result = heads ? "heads" : "tails";
     this.setState({ 
+      error: null,
       loading: false,
       result: result 
     });
@@ -35,7 +37,8 @@ class App extends Component {
   processError = (error) => {
     this.setState({ 
       error: error.message, 
-      loading: false });
+      loading: false 
+    });
   }
 
   render() {
