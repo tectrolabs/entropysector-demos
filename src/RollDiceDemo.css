@@ -1,12 +1,12 @@
-.Result {
+.RollDiceDemo .Result {
   width: 250px;
-  height: 75px;
+  height: 70px;
   text-align: center;
   margin: 0 auto;
   padding-bottom: 20px;
 }
 
-.Result img {
-  width: 75px;
-  height: 75px;
+.RollDiceDemo .Result img {
+  width: 70px;
+  height: 70px;
 }

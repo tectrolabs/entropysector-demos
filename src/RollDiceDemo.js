@@ -65,6 +65,7 @@ class RollDiceDemo extends Component {
     return (
       <div className="RollDiceDemo">
         <h2>Dice Roll</h2>
+
         <div className="Result">
           {diceImages}
         </div>
