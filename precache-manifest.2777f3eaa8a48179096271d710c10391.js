@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "ed8c94b995605ad03d87",
+    "revision": "bf4a45fac3a339bce53f",
     "url": "/coinflip/static/css/main.61ec3b80.chunk.css"
   },
   {
-    "revision": "ed8c94b995605ad03d87",
-    "url": "/coinflip/static/js/main.d5ea2ec8.chunk.js"
+    "revision": "bf4a45fac3a339bce53f",
+    "url": "/coinflip/static/js/main.ce67f84d.chunk.js"
   },
   {
     "revision": "231dc040d4852110ba36",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/coinflip/static/media/logo.5d5d9eef.svg"
   },
   {
-    "revision": "ec5cc176e2182e838af24a8ec69a236f",
+    "revision": "1a1e152f24f228cac5fc5bcc8c56f745",
     "url": "/coinflip/index.html"
   }
 ];
