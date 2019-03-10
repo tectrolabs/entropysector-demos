@@ -1,6 +1,7 @@
 {
   "name": "coinflip",
   "version": "0.1.0",
+  "homepage": "http://ebelinski.github.io/coinflip",
   "private": true,
   "dependencies": {
     "react": "^16.8.4",
