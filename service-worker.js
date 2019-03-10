@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/coinflip/precache-manifest.2777f3eaa8a48179096271d710c10391.js"
+  "/coinflip/precache-manifest.6e002602509bd3279efd525aa8003aed.js"
 );
 
 workbox.clientsClaim();
