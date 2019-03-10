@@ -17,7 +17,9 @@ class App extends Component {
   }
 
   processNumber = (number) => {
-    this.setState({ result: number });
+    const heads = (number % 2 == 1);
+    const result = heads ? "Heads" : "Tails"
+    this.setState({ result: result });
   }
 
   render() {
