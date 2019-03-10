@@ -1,13 +1,13 @@
 {
-  "main.css": "/coinflip/static/css/main.7c26ae23.chunk.css",
-  "main.js": "/coinflip/static/js/main.57214eb7.chunk.js",
-  "main.js.map": "/coinflip/static/js/main.57214eb7.chunk.js.map",
-  "runtime~main.js": "/coinflip/static/js/runtime~main.fc48f583.js",
-  "runtime~main.js.map": "/coinflip/static/js/runtime~main.fc48f583.js.map",
-  "static/js/2.aa7a0768.chunk.js": "/coinflip/static/js/2.aa7a0768.chunk.js",
-  "static/js/2.aa7a0768.chunk.js.map": "/coinflip/static/js/2.aa7a0768.chunk.js.map",
-  "index.html": "/coinflip/index.html",
-  "precache-manifest.c13335d35d8477210dd2f0574702a24a.js": "/coinflip/precache-manifest.c13335d35d8477210dd2f0574702a24a.js",
-  "service-worker.js": "/coinflip/service-worker.js",
-  "static/css/main.7c26ae23.chunk.css.map": "/coinflip/static/css/main.7c26ae23.chunk.css.map"
+  "main.css": "/static/css/main.7c26ae23.chunk.css",
+  "main.js": "/static/js/main.c57f568e.chunk.js",
+  "main.js.map": "/static/js/main.c57f568e.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.c5541365.js",
+  "runtime~main.js.map": "/static/js/runtime~main.c5541365.js.map",
+  "static/js/2.aa7a0768.chunk.js": "/static/js/2.aa7a0768.chunk.js",
+  "static/js/2.aa7a0768.chunk.js.map": "/static/js/2.aa7a0768.chunk.js.map",
+  "index.html": "/index.html",
+  "precache-manifest.4a8bf578184ad9043001b9a01a3f5028.js": "/precache-manifest.4a8bf578184ad9043001b9a01a3f5028.js",
+  "service-worker.js": "/service-worker.js",
+  "static/css/main.7c26ae23.chunk.css.map": "/static/css/main.7c26ae23.chunk.css.map"
 }
