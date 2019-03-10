@@ -22,6 +22,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h1>Entropy Sector<br />Coin Flip</h1>
         <p className="Result">{this.state.result}</p>
         <button onClick={this.handleClick} className="FlipCoinButton">Flip Coin</button>
       </div>
