@@ -24,7 +24,8 @@ class CoinFlipDemo extends Component {
   }
 
   processNumber = (number) => {
-    const heads = (number % 2 == 1);
+    const positiveNumber = number + 2147483648;
+    const heads = (positiveNumber % 2 == 1);
     const result = heads ? "heads" : "tails";
     this.setState({ 
       error: null,

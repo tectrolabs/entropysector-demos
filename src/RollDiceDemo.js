@@ -25,10 +25,11 @@ class RollDiceDemo extends Component {
 
   processNumbers = (numbers) => {
     const result = numbers
+      .map(x => x + 2147483648)
       .map(x => (x % 6))
       .map(x => Math.abs(x))
       .map(x => x + 1); // 1 to 6
-    console.log(result);
+
     this.setState({ 
       error: null,
       loading: false,
@@ -50,7 +51,6 @@ class RollDiceDemo extends Component {
     var diceImages = null;
     if (numbers) {
       var diceUrls = numbers.map(x => `images/6die-${x}.png`);
-      console.log(diceUrls);
 
       diceImages = (
         <div className="Result">
@@ -59,7 +59,6 @@ class RollDiceDemo extends Component {
           <img src={diceUrls[2]} />
         </div>
       );
-      console.log(diceImages);
     }
 
     return (
