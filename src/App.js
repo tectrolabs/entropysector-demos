@@ -11,7 +11,12 @@ class App extends Component {
   }
 
   handleClick = () => {
-    this.setState({ result: "Hi" });
+    fetch("https://entropysector.com/hwrng/api/v1/public/numbers/1")
+      .then(response => response.json())
+      .then((result) => {
+        console.log(result);
+        this.setState({ result: result["data"][0] });
+      });
   }
 
   render() {
