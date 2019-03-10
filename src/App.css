@@ -33,3 +33,7 @@
 button {
   font-size: 20px;
 }
+
+.Error {
+  color: red;
+}

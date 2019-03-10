@@ -7,7 +7,8 @@ class App extends Component {
     super(props);
     this.state = {
       loading: false,
-      result: null
+      result: null,
+      error: null
     };
   }
 
@@ -18,7 +19,8 @@ class App extends Component {
     });
     fetch("https://entropysector.com/hwrng/api/v1/public/numbers/1")
       .then(response => response.json())
-      .then(result => this.processNumber(result["data"][0]));
+      .then(result => this.processNumber(result["data"][0]))
+      .catch(error => this.processError(error));
   }
 
   processNumber = (number) => {
@@ -30,8 +32,15 @@ class App extends Component {
     });
   }
 
+  processError = (error) => {
+    this.setState({ 
+      error: error.message, 
+      loading: false });
+  }
+
   render() {
-    var resultImageUrl = this.state.result ? `images/quarter-${this.state.result}.png` : null
+    var resultImageUrl = this.state.result ? `images/quarter-${this.state.result}.png` : null;
+    var errorMessage = this.state.error;
 
     return (
       <div className="App">
@@ -39,10 +48,12 @@ class App extends Component {
         <div className="Result">
           {resultImageUrl ? <img src={resultImageUrl}/> : null}
         </div>
-        
+
         <button onClick={this.handleClick} className="FlipCoinButton">
           {this.state.loading ? "Loading..." : "Flip Coin"}
         </button>
+
+        {errorMessage ? <p className="Error">{errorMessage}</p> : null}
       </div>
     );
   }
