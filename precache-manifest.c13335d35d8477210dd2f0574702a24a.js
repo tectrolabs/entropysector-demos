@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/coinflip/static/js/2.aa7a0768.chunk.js"
   },
   {
-    "revision": "7468714039a4cd8ed5810bac0f6cf06b",
+    "revision": "ccdcb1bdb6663166b9d8fd82c914794e",
     "url": "/coinflip/index.html"
   }
 ];
