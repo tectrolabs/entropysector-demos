@@ -2,19 +2,6 @@
   text-align: center;
 }
 
-.Result {
-  width: 100px;
-  height: 100px;
-  text-align: center;
-  margin: 0 auto;
-  padding-bottom: 20px;
-}
-
-.Result img {
-  width: 100px;
-  height: 100px;
-}
-
 button {
   font-size: 20px;
 }
