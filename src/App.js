@@ -6,11 +6,16 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      loading: false,
       result: null
     };
   }
 
   handleClick = () => {
+    this.setState({ 
+      loading: true,
+      result: null 
+    });
     fetch("https://entropysector.com/hwrng/api/v1/public/numbers/1")
       .then(response => response.json())
       .then(result => this.processNumber(result["data"][0]));
@@ -19,17 +24,25 @@ class App extends Component {
   processNumber = (number) => {
     const heads = (number % 2 == 1);
     const result = heads ? "heads" : "tails";
-    this.setState({ result: result });
+    this.setState({ 
+      loading: false,
+      result: result 
+    });
   }
 
   render() {
-    var resultImage = this.state.result ? `images/quarter-${this.state.result}.png` : null
+    var resultImageUrl = this.state.result ? `images/quarter-${this.state.result}.png` : null
 
     return (
       <div className="App">
         <h2>Entropy Sector<br />Coin Flip</h2>
-        {resultImage ? <p className="Result"><img src={resultImage}/></p> : null}
-        <button onClick={this.handleClick} className="FlipCoinButton">Flip Coin</button>
+        <div className="Result">
+          {resultImageUrl ? <img src={resultImageUrl}/> : null}
+        </div>
+        
+        <button onClick={this.handleClick} className="FlipCoinButton">
+          {this.state.loading ? "Loading..." : "Flip Coin"}
+        </button>
       </div>
     );
   }
