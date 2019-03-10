@@ -6,7 +6,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      result: ""
+      result: null
     };
   }
 
@@ -18,15 +18,17 @@ class App extends Component {
 
   processNumber = (number) => {
     const heads = (number % 2 == 1);
-    const result = heads ? "Heads" : "Tails"
+    const result = heads ? "heads" : "tails";
     this.setState({ result: result });
   }
 
   render() {
+    var resultImage = this.state.result ? `images/quarter-${this.state.result}.png` : null
+
     return (
       <div className="App">
-        <h1>Entropy Sector<br />Coin Flip</h1>
-        <p className="Result">{this.state.result}</p>
+        <h2>Entropy Sector<br />Coin Flip</h2>
+        {resultImage ? <p className="Result"><img src={resultImage}/></p> : null}
         <button onClick={this.handleClick} className="FlipCoinButton">Flip Coin</button>
       </div>
     );
