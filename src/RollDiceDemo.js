@@ -9,6 +9,8 @@ class RollDiceDemo extends Component {
       result: null,
       error: null
     };
+
+    this.handleClick();
   }
 
   handleClick = () => {
