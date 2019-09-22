@@ -19,6 +19,7 @@ class App extends Component {
         <h1>Entropy Sector Demos</h1>
         <CoinFlipDemo />
         <RollDiceDemo />
+        <p>Powered by <a href="https://tectrolabs.com/swiftrng/">SwiftRNG</a>
       </div>
     );
   }
